@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :show, :create, :update, :destroy]
   resources :lessons, only: [:index, :show, :create, :update, :destroy]
+
+  post 'user_token', to: 'user_token#create'
   post '/login', to: 'auth#login'
   
 end
