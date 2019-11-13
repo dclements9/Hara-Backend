@@ -1,4 +1,4 @@
-class LessonsController < ApplicationController
+class Api::V1::LessonsController < ApplicationController
     before_action :set_lesson, only: [:show, :update, :destroy]
 
     def index
