@@ -26,7 +26,7 @@ module HaraBackend
       allow do
         # origins '*'
         origins 'http://localhost:3000'
-        resource '*', headers: :any, methods: [:get, :post, :options, :put, :delete]
+        resource '*', headers: :any, methods: [:get, :post, :options, :put, :patch, :delete]
       end
     end
 
