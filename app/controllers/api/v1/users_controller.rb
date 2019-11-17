@@ -43,7 +43,9 @@ class Api::V1::UsersController < ApplicationController
     
       # DELETE /users/1
       def destroy
-        @user.destroy
+        user =  User.find(params[:id])
+        
+        user.destroy ? (render json: user.id) : (render json: {status: 500, message: 'User cannot be deleted'})
       end
 
     private

@@ -32,7 +32,9 @@ class Api::V1::LessonsController < ApplicationController
   
     # DELETE /lessons/1
     def destroy
-      @lesson.destroy
+      lesson =  Lesson.find(params[:id])
+      
+      lesson.destroy ? (render json: lesson.id) : (render json: {status: 500, message: 'Lesson cannot be deleted'})
     end
   
     private
