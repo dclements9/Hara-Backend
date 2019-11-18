@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users, only: [:index, :show, :create, :update, :destroy]
       resources :lessons, only: [:index, :show, :create, :update, :destroy]
+      resources :challenges, only: [:index, :show, :create, :update, :destroy]
     end
   end
   

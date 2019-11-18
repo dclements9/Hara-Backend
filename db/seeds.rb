@@ -19,3 +19,11 @@ BeginnerLesson = Lesson.create(title: 'Beginner Class', description: "The Beginn
 IntermediateLesson = Lesson.create(title: 'Intermediate Class', description: "The Intermediate Class for the more advanced.", date: "2019-12-01", start_time: "2000-01-01 09:00:00", end_time: "2000-01-01 10:00:00")
     
 AdvancedLesson = Lesson.create(title: 'Advanced Class', description: "The Advanced Class for the properly skilled.", date: "2019-12-01", start_time: "2000-01-01 10:00:00", end_time: "2000-01-01 01:00:00")
+
+FirstWeeklyChallenge = Challenge.create(title: 'First Weekly Challenge', description: 'This is the First Weekly Challenge', 
+                    stepOne: '100 kicks', stepTwo: '200 punches', stepThree: '1 hour partner training', stepFour: 'Run 3 miles')
+
+
+FirstMonthlyChallenge = Challenge.create(title: 'Monthly Challenge', description: 'This is the Monthly Challenge', 
+                        stepOne: 'Run 10 miles', stepTwo: '5 hours partner training', stepThree: 'Practice form 50 times', stepFour: 'Clean Dojang 2 times',
+                    users: [JaneDoe, JoeShmo])
