@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+    has_and_belongs_to_many :challenges
     # has_secure_password
 
 #  TODO: Add password_digest to password
