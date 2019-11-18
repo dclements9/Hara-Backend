@@ -18,9 +18,11 @@ JaneDoe = User.create(first_name: 'Jane', last_name: 'Doe', email: 'jdoe@doe.com
 
 # Lessons
 BeginnerLesson = Lesson.create(title: 'Beginner Class', description: "The Beginner Class for all.", date: "2019-12-01", start_time: "2000-01-01 08:00:00", end_time: "2000-01-01 09:00:00")
-    
+BeginnerLesson.users = [JohnSmith, JaneDoe]
+
 IntermediateLesson = Lesson.create(title: 'Intermediate Class', description: "The Intermediate Class for the more advanced.", date: "2019-12-01", start_time: "2000-01-01 09:00:00", end_time: "2000-01-01 10:00:00")
-    
+IntermediateLesson.users = [JoeShmo]
+
 AdvancedLesson = Lesson.create(title: 'Advanced Class', description: "The Advanced Class for the properly skilled.", date: "2019-12-01", start_time: "2000-01-01 10:00:00", end_time: "2000-01-01 01:00:00")
 
 # Challenges
