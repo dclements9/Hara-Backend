@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_17_214625) do
+ActiveRecord::Schema.define(version: 2019_11_18_013414) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,13 @@ ActiveRecord::Schema.define(version: 2019_11_17_214625) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "challenges_users", id: false, force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "challenge_id", null: false
+    t.index ["challenge_id", "user_id"], name: "index_challenges_users_on_challenge_id_and_user_id"
+    t.index ["user_id", "challenge_id"], name: "index_challenges_users_on_user_id_and_challenge_id"
+  end
+
   create_table "lessons", force: :cascade do |t|
     t.string "title"
     t.string "description"
@@ -34,6 +41,13 @@ ActiveRecord::Schema.define(version: 2019_11_17_214625) do
     t.time "end_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "lessons_users", id: false, force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "lesson_id", null: false
+    t.index ["lesson_id", "user_id"], name: "index_lessons_users_on_lesson_id_and_user_id"
+    t.index ["user_id", "lesson_id"], name: "index_lessons_users_on_user_id_and_lesson_id"
   end
 
   create_table "users", force: :cascade do |t|

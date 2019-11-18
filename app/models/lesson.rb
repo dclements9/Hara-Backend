@@ -1,5 +1,5 @@
 class Lesson < ApplicationRecord
-    has_many :users
+    has_and_belongs_to_many :users
 
     validates :title, :description, presence: true
 end
