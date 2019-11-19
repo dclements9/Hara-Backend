@@ -15,7 +15,10 @@ An administrator is able to Create, edit, and delete Users, Lessons, and Challen
 
 **Ruby 2.6.3 is required.**
 
-To get started, run the following commands:
+To get started, 
+1. Confirm a `postgresql` server is installed and the service is running.
+
+2. Then run the following commands:
 ```ruby
 bundle install
 ```
