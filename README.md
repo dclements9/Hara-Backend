@@ -2,10 +2,9 @@
 
 This is the API/backend. For the client/Frontend visit:
 
-https://github.com/dclements9/Hara-Frontend
+[Hara-Frontend](https://github.com/dclements9/Hara-Frontend)
 
 ### Student Portal coming soon!
-
 
 
 Hara is a Martial Arts studio management system.
@@ -36,7 +35,7 @@ Sample data includes:
 2. 3 Lessons (With associated users)
 3. 2 Challanges (With associated users)
 
-To view json data: navigate to https://localhost:3001 in a web browser. Or visit: https://github.com/dclements9/Hara-Frontend
+To view json data: navigate to http://localhost:3001 in a web browser. Or visit: [Hara-Frontend](https://github.com/dclements9/Hara-Frontend)
 to fully interact with Hara.
 
 ## Development
