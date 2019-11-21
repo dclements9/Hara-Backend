@@ -8,13 +8,13 @@
 
 # Users
 JohnSmith = User.create(first_name: 'John', last_name: 'Smith', email: 'jsmith@smith.com', 
-    password_digest: 'password', age: 18, rank: 1)
+    password_digest: 'password', age: 18, rank: "9th kup")
     
 JoeShmo = User.create(first_name: 'Joe', last_name: 'Shmo', email: 'jshmo@shmo.com', 
-    password_digest: 'password', age: 22, rank: 3)
+    password_digest: 'password', age: 22, rank: "6th kup")
     
 JaneDoe = User.create(first_name: 'Jane', last_name: 'Doe', email: 'jdoe@doe.com', 
-    password_digest: 'password', age: 24, rank: 5)
+    password_digest: 'password', age: 24, rank: "8th kup")
 
 # Lessons
 BeginnerLesson = Lesson.create(title: 'Beginner Class', description: "The Beginner Class for all.", date: "2019-12-01", start_time: "2000-01-01 08:00:00", end_time: "2000-01-01 09:00:00")
