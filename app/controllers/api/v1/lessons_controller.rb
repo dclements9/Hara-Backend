@@ -23,6 +23,16 @@ class Api::V1::LessonsController < ApplicationController
   
     # PATCH/PUT /lessons/1
     def update
+      counter = 0
+
+      while counter < params[:lesson][:users].length 
+        for user in params[:lesson][:users]
+          newUser = User.find(user[:id])
+          @lesson.users.push(newUser) unless @lesson.users.include?(newUser)
+          counter = counter + 1
+        end
+      end
+
       if @lesson.update(lesson_params)
         render json: @lesson
       else
