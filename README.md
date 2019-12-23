@@ -58,3 +58,7 @@ Code of Conduct
 ## Code of Conduct
 
 Everyone interacting in the Hara project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
+
+## TODO
+
+* Auto update seed lessons date each day
