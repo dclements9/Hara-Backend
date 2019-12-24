@@ -36,7 +36,7 @@ Sample data includes:
 
 1. 3 Users/Students
 2. 3 Lessons (With associated users)
-3. 2 Challanges (With associated users)
+3. 2 Challenges (With associated users)
 
 To view json data: navigate to http://localhost:3001 in a web browser. Or visit: [Hara-Frontend](https://github.com/dclements9/Hara-Frontend)
 to fully interact with Hara.
