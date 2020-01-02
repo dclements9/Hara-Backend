@@ -18,19 +18,19 @@ JaneDoe = User.create(first_name: 'Jane', last_name: 'Doe', email: 'jdoe@doe.com
 
 # Lessons
 
-today_date = Time.now
-formatted_date = (today_date.to_s).split
+today_date = Date.today.to_s
+future_date = (Date.today+3).to_s
 
-BeginnerLesson = Lesson.create(title: 'Beginner Class', description: "The Beginner Class for all.", date: formatted_date[0], start_time: "2000-01-01 08:00:00", end_time: "2000-01-01 09:00:00")
+BeginnerLesson = Lesson.create(title: 'Beginner Class', description: "The Beginner Class for all.", date: today_date, start_time: "2000-01-01 08:00:00", end_time: "2000-01-01 09:00:00")
 BeginnerLesson.users = [JohnSmith, JaneDoe]
 
-IntermediateLesson = Lesson.create(title: 'Intermediate Class', description: "The Intermediate Class for the more advanced.", date: formatted_date[0], start_time: "2000-01-01 09:00:00", end_time: "2000-01-01 10:00:00")
+IntermediateLesson = Lesson.create(title: 'Intermediate Class', description: "The Intermediate Class for the more advanced.", date: today_date, start_time: "2000-01-01 09:00:00", end_time: "2000-01-01 10:00:00")
 IntermediateLesson.users = [JoeShmo]
 
-AdvancedLesson = Lesson.create(title: 'Advanced Class', description: "The Advanced Class for the properly skilled.", date: formatted_date[0], start_time: "2000-01-01 10:00:00", end_time: "2000-01-01 11:00:00")
+AdvancedLesson = Lesson.create(title: 'Advanced Class', description: "The Advanced Class for the properly skilled.", date: today_date, start_time: "2000-01-01 10:00:00", end_time: "2000-01-01 11:00:00")
 AdvancedLesson.users = [JoeShmo]
 
-ExtraLesson = Lesson.create(title: 'Extra Class', description: "The Extra Class for more fun.", date: "2019-12-09", start_time: "2000-01-01 10:00:00", end_time: "2000-01-01 01:00:00")
+ExtraLesson = Lesson.create(title: 'Extra Class', description: "The Extra Class for more fun.", date: future_date, start_time: "2000-01-01 10:00:00", end_time: "2000-01-01 01:00:00")
 
 # Challenges
 FirstWeeklyChallenge = Challenge.create(title: 'First Weekly Challenge', description: 'This is the First Weekly Challenge', 
