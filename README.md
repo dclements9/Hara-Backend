@@ -4,6 +4,10 @@ This is the API/backend. For the client/Frontend visit:
 
 [Hara-Frontend](https://github.com/dclements9/Hara-Frontend)
 
+For a Live Heroku Demo (Database refreshed every day at midnight): 
+
+[Hara-Heroku](http://hara-client.herokuapp.com/)
+
 ### Student Portal coming soon!
 
 
@@ -13,7 +17,7 @@ An administrator is able to Create, edit, and delete Users, Lessons, and Challen
 
 ## Installation
 
-**Ruby 2.6.3 is required.**
+**Ruby 2.7.1 is required.**
 
 To get started, 
 1. Confirm a `postgresql` server is installed and the service is running.
