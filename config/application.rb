@@ -25,7 +25,7 @@ module HaraBackend
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         # origins '*'
-        origins 'http://hara-client.herokuapp.com/'
+        origins 'https://hara-client.herokuapp.com/'
         resource '*', headers: :any, methods: [:get, :post, :options, :put, :patch, :delete]
       end
     end
